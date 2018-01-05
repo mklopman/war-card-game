@@ -1,0 +1,53 @@
+.icard {
+	position: absolute;
+	padding: 10px;
+	height: 200px;
+	width: 150px;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: white;
+	display: inline-block;
+	top: 0;
+	left: 0;
+}
+
+.cardTop {
+	font-size: 2em;
+	height: 40px;
+	line-height: 0.7em;
+}
+
+.cardMid {
+	text-align: center;
+	font-size: 7em;
+	height: 110px;
+}
+
+.cardBottom {
+	font-size: 2em;
+	height: 50px;
+	line-height: 0.7em;
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+}
+
+.hearts . suit::after {content: '\2665';}
+.spades . suit::after {content: '\2665';}
+.clubs . suit::after {content: '\2665';}
+.diams . suit::after {content: '\2665';}
+.spads, .clubs {color: black;}
+.hearts, .diams {color: red;}
+
+.hand {
+	position: relative;
+}
+
+.players {
+	float: left;
+	width: 49%;
+	min-height: 300px;
+	border: 1px solid black;
+
+}
