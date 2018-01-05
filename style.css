@@ -18,8 +18,10 @@
 }
 
 .cardMid {
+	/*position: relative;*/
 	text-align: center;
-	font-size: 7em;
+	/*top: 50%;*/
+	font-size: 5em;
 	height: 110px;
 }
 
@@ -27,27 +29,66 @@
 	font-size: 2em;
 	height: 50px;
 	line-height: 0.7em;
+	transform: rotate(-180deg);
 	-webkit-transform: rotate(-180deg);
 	-moz-transform: rotate(-180deg);
 	-ms-transform: rotate(-180deg);
 	-o-transform: rotate(-180deg);
 }
 
-.hearts . suit::after {content: '\2665';}
-.spades . suit::after {content: '\2665';}
-.clubs . suit::after {content: '\2665';}
-.diams . suit::after {content: '\2665';}
-.spads, .clubs {color: black;}
+.hearts .suit::after {content: '\2665'; margin-top: 15px;}
+.spades .suit::after {content: '\2660'; margin-top: 15px;}
+.clubs .suit::after {content: '\2663'; margin-top: 15px;}
+.diams .suit::after {content: '\2666'; margin-top: 15px;}
+.spades, .clubs {color: black;}
 .hearts, .diams {color: red;}
 
 .hand {
 	position: relative;
 }
 
+.score {
+	font-size: 1.5em;
+}
+
 .players {
 	float: left;
 	width: 49%;
 	min-height: 300px;
-	border: 1px solid black;
+	border: 1px solid #ddd;
 
 }
+
+#message {
+	font-size: 1.2 em;
+	color: white;
+	background-color: black;
+	padding: 5px;
+}
+
+.btn {
+	border-radius: 5px;
+	padding: 9px;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	text-shadow: 1px 1px #000;
+}
+
+#battleButton {
+	background-color: red;
+}
+
+#battleButton10 {
+	background-color: blue;
+}
+
+#battleButton50 {
+	background-color: green;
+}
+
+
+
+
+
+
