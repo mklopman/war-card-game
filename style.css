@@ -1,3 +1,18 @@
+body {
+	background-color: silver;
+}
+
+#wrapper {
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 58%;
+	top: 43%;
+	margin-left: -8px;
+	background-color: palegoldenrod;
+}
+
+
 .icard {
 	position: absolute;
 	padding: 10px;
@@ -47,29 +62,45 @@
 	position: relative;
 }
 
-.score {
+/*.score {
 	font-size: 1.5em;
+}*/
+
+#board {
+	position: relative;
+	display: flex;
 }
 
 .players {
-	float: left;
-	width: 49%;
+	position: relative;
+	/*display: flex;*/
+	/*float: left;*/
+	width: 50%;
 	min-height: 300px;
-	border: 1px solid #ddd;
+	border: 1px solid black;
+	background-color: silver;
+}
 
+#comp {
+	position: relative;
 }
 
 #message {
-	font-size: 1.2 em;
+	font-size: 20px;
 	color: white;
 	background-color: black;
 	padding: 5px;
+	text-align: center;
+	font-family: 'Joti One', cursive;
 }
 
 .btn {
+	position: relative;
+	top: 8px;
 	border-radius: 5px;
-	padding: 9px;
+	padding: 15px;
 	color: white;
+	font-size: 18px;
 	display: inline-block;
 	text-align: center;
 	text-shadow: 1px 1px #000;
@@ -87,8 +118,96 @@
 	background-color: green;
 }
 
+#home-nav{
+	position: absolute;
+	width: 100%;
+	height: 45%;
+	background-color: #283747;
+	top: -10px;
+	margin-left: -8px;
+	margin-right: -20px;
+}
+
+#war-header{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	color: #D5DBDB;
+	/*text-align: center;*/
+	top: -50px;
+	font-size: 150px;
+	font-family: 'Joti One', cursive;
+}
 
 
+#instructions-div {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 330px;
+	left: 37%;
+	justify-content: center;
+	align-items: center;
+}
 
+.section {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+	justify-content: center;
+	left: 35%;
+	width: 340px;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: gold;
+}
 
+#play-button {
+	width: 75px;
+	height: 40px;
+	background-color: dimgray;
+	color: white;
+	font-size: 20px;
+	border: 2px solid black;
+	margin-bottom: 5px;
+}
 
+#text {
+	position: relative;
+  	display: none;
+  	top: -40px;
+  	font-family: 'Joti One', cursive;
+  	text-transform: uppercase;
+  	font-size: 17px;
+}
+
+#a {
+	font-size: 25px;
+	top: -10px;
+	color: midnightblue;
+	text-decoration: none;
+}
+
+#a:hover {
+	color: red;
+}
+
+#compScore, #playerScore {
+	position: relative;
+	text-align: center;
+	font-family: impact;
+	font-size: 1.5em;
+}
+
+#action {
+	position: relative;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+#reload {
+	background-color: gold;
+	color: midnightblue;
+}

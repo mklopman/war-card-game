@@ -5,26 +5,46 @@
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
     <title>WAR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
 <body>
-    <div id="wrapper">
+    <div id="container">
+        <section class="animated rotateInDownLeft" id="home-nav">
+            <h1 id="war-header">WAR!</h1>
+        </section>
+        <div id="instructions-div">
+        	<button id="play-button">PLAY</button>
+            <div class="section">
+
+                <h3><a class="btn" id="a" href="#">INSTRUCTIONS</a></h3>
+                <div id="text">
+                    <p>
+                        Two fighters: You vs. the computer. Click "Fight" to draw a card -- "X 10" will draw 10 cards and "X 50" will draw 50 -- and whoever draws the higher card wins the hand. First figher to collect all 52 cards wins! Click that button above to engage in WAR!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper" class="animated rotateInUpRight">
         <div id="message">Click Fight To Start</div>
         <div id="board">
             <div id="player" class="players">
-                <div>SCORE:<span class="score"></span></div>
+                <div id="playerScore">SCORE -- <span class="score"></span></div>
                 <div class="hand"></div>
             </div>
             <div id="comp" class="players">
-                <div>SCORE:<span class="score"></span></div>
+                <div id="compScore">SCORE -- <span class="score"></span></div>
                 <div class="hand"></div>
             </div>
-            <div id="action">
-                <button id="battleButton" type="button" class="btn">Fight</button>
-                <button id="battleButton10" type="button" class="btn">10 Rounds</button>
-                <button id="battleButton50" type="button" class="btn">50 Rounds</button>
-            </div>
+        </div>
+        <div id="action">
+            <button id="battleButton" type="button" class="btn">Fight</button>
+            <button id="battleButton10" type="button" class="btn">X 10</button>
+            <button id="battleButton50" type="button" class="btn">X 50</button>
+            <button class="btn" id="reload" type="button">HOME</button>
         </div>
     </div>
     <script src="game.js"></script>
